@@ -21,4 +21,4 @@ if __name__ == '__main__':
     test = net.add_node(np.array([1.0, 0.0], dtype=np.float32))
     edge = net.connect(test[0], x[0])
     ans = net.contract(edge)
-    print(ans.get_tensor())
+    print(ans.tensor)
